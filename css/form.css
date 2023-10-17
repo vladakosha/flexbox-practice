@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+fieldset {
+  border: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.form-field,
+.form-buttons,
+.checkbox {
+  margin: 10px;
+}
+
+.form-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+label,
+.privacy {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #344054;
+}
+
+input,
+.phone-field {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: #667085;
+}
+
+textarea {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  height: 100px;
+}
+
+select,
+#phone-number {
+  border: none;
+}
+
+.phone-field {
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+}
+
+.button-style {
+  color: white;
+  border: none;
+  background-color: #7f56d9;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-end;
+}
+
+.checkbox-style {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .form-name {
+    flex-direction: column;
+  }
+}
